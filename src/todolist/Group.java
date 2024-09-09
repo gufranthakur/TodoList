@@ -22,6 +22,16 @@ public class Group extends JInternalFrame {
         this.setBounds(x, y, 250, 250);
         this.setVisible(true); 
     }
+    public Group(GroupPanel groupPanel, String title, int x, int y, int width, int height) {
+        super(title, true, true, false, false);
+        this.groupPanel = groupPanel;
+        this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
+
+        init();
+
+        this.setBounds(x, y, width, height);
+        this.setVisible(true);
+    }
     
     public void init() {
         controlPanel = new JPanel();

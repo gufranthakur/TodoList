@@ -27,5 +27,16 @@ public class GroupPanel extends JDesktopPane{
         }
         
     }
+    public void addGroup(String name) {
+        int dimension = 400;
+        int x = (app.getWidth() / 2 - dimension / 2);
+        
+        
+        app.groupPanel.add(new Group(app.groupPanel, name, x, currentY, dimension, dimension));
+        app.revalidate();
+
+        
+
+    }
     
 }

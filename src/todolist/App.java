@@ -39,6 +39,9 @@ public class App extends JFrame implements ComponentListener {
             groupPanel.revalidate();
             groupPanel.repaint();
         });
+        
+        
+        groupPanel.addGroup("Tasks");
     }
     
     public void addComponent() {
